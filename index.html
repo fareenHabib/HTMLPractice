@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Portal</title>
+</head>
+
+<body style="margin:0; font-family:Arial;">
+
+<!-- Navigation Bar -->
+<div style="background-color:#333; overflow:hidden;">
+
+  <a href="#home"
+     style="float:left; color:white; padding:18px 20px; text-decoration:none;"
+     onmouseover="this.style.backgroundColor='yellow'; this.style.color='black';"
+     onmouseout="this.style.backgroundColor='#333'; this.style.color='white';">
+     HOME
+  </a>
+
+  <a href="#"
+     style="float:left; color:white; padding:18px 20px; text-decoration:none;"
+     onmouseover="this.style.backgroundColor='yellow'; this.style.color='black';"
+     onmouseout="this.style.backgroundColor='#333'; this.style.color='white';">
+     ABOUT
+  </a>
+
+  <a href="#"
+     style="float:left; color:white; padding:18px 20px; text-decoration:none;"
+     onmouseover="this.style.backgroundColor='yellow'; this.style.color='black';"
+     onmouseout="this.style.backgroundColor='#333'; this.style.color='white';">
+     SERVICE
+  </a>
+
+  <a href="#"
+     style="float:left; color:white; padding:18px 20px; text-decoration:none;"
+     onmouseover="this.style.backgroundColor='yellow'; this.style.color='black';"
+     onmouseout="this.style.backgroundColor='#333'; this.style.color='white';">
+     CONTACT
+  </a>
+
+</div>
+
+<!-- HOME Section -->
+<div id="home" style="padding:20px;">
+  <h2>Welcome to Student Portal</h2>
+  <p>This is the HOME page displaying some information.</p>
+</div>
+
+<!-- Main Content -->
+<div style="display:flex;">
+
+  <!-- Frame1 -->
+  <div style="width:50%; background-color:lightblue; padding:20px; text-align:center;">
+
+    <h3>Frame1 (Background Color Set)</h3>
+
+    <table border="1" width="80%" height="200px" align="center">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td colspan="2" rowspan="2">Add Image</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <!-- Frame2 -->
+  <div style="width:50%; padding:20px;">
+
+    <h2>Student Information Form</h2>
+
+    <form action="#" method="POST">
+
+      Name:
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <br><br>
+
+      Gender:
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <br><br>
+
+      Languages Known:
+      <input type="checkbox" name="lang1" value="C"> C
+      <input type="checkbox" name="lang2" value="Java"> Java
+      <input type="checkbox" name="lang3" value="Python"> Python
+      <br><br>
+
+      Favorite Color:
+      <input type="color" name="color">
+      <br><br>
+
+      Date of Birth:
+      <input type="date" name="dob">
+      <br><br>
+
+      Department:
+      <select name="dept">
+        <option>Select</option>
+        <option>Computer Science</option>
+        <option>Mathematics</option>
+        <option>Physics</option>
+      </select>
+      <br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>
